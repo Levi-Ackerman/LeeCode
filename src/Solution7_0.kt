@@ -1,4 +1,5 @@
 class Solution7_0 {
+    //反转int值，注意溢出
     fun reverse(num: Int): Int {
         var start = System.nanoTime()
         val isNegative = num < 0

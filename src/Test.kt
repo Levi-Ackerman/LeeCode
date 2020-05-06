@@ -11,6 +11,6 @@ class Test {
 
         return true
     }
-}
 
-class NullClass(var str:String?)
+    class NullClass(var str:String?)
+}

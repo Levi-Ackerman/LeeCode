@@ -10,6 +10,9 @@ class Solution45_0 {
         val CANNOT_ARRIVE = Int.MAX_VALUE //用最大值表示不可达，以便在最小值筛选的时候去掉不可达的情况
     }
 
+    /**
+     * 从数组第一个数跳到尾数要几步，每个数的值表示最大跳跃半径
+     */
     fun jump(nums: IntArray): Int {
         if (nums.size <= 1) {
             return 0
