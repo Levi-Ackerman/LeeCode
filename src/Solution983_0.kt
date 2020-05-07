@@ -25,7 +25,8 @@ class Solution983_0 {
     fun mincostTickets(days: IntArray, costs: IntArray): Int {
         mDays = days
         mCosts = costs
-        mMemo = IntArray(mDays.size) { 0 }
+        //旅行的日期天数是从1开始算的，所以备忘录要多一个元素，把0空出来
+        mMemo = IntArray(mDays.size+1) { 0 }
         return minCost(0, -1)
     }
 
@@ -67,7 +68,7 @@ class Solution983_0 {
             }
         }
 
-        println("第${mDays[startIndex]} 天买票，花费${mCosts[minIndex]}元，有效期${mExpiration[minIndex]}天")
+        println("第${mDays[startIndex]} 天买票到旅行结束，最佳票花费${mCosts[minIndex]}元，票有效期${mExpiration[minIndex]}天,累计花费${cost}元，累计有效期${expirationDay+mExpiration[minIndex]}天")
 
         mMemo[startIndex] = cost
         return cost
