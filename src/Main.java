@@ -1,9 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        Test.NullClass nullClass = new Test.NullClass("");
-        nullClass.setStr("Hello");
-
+        System.out.println(-6 ^ 6);
     }
 
 }
