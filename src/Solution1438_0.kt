@@ -45,7 +45,7 @@ class Solution1438_0 {
 
                 }
             }
-            if (nums[tail] < nums[curMaxValueIndex])
+            if (nums[tail] < nums[curMaxValueIndex]){}
             var min = Int.MAX_VALUE
             var max = Int.MIN_VALUE
             for (i in head..tail) {
